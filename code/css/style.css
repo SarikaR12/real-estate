@@ -1,0 +1,892 @@
+/* ==================variables================== */
+
+:root {
+   --primary: #3b82f6;
+   --black: #000;
+   --white: #fff;
+   --h-color: #101828;
+   --p-color: #475467;
+   --headfont: onest;
+}
+
+/* =============== common css ===================== */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+
+body {
+   font-family: 'Inter';
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+a {
+   text-decoration: none;
+}
+
+input:focus {
+   outline: none;
+}
+
+.container {
+   max-width: 1320px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.col-1 {
+   width: 8.33%;
+}
+
+.col-2 {
+   width: 16.66%;
+}
+
+.col-3 {
+   width: 25%;
+}
+
+.col-4 {
+   width: 33.33%;
+}
+
+.col-5 {
+   width: 41.66%;
+}
+
+.col-6 {
+   width: 50%;
+}
+
+.col-7 {
+   width: 58.33%;
+}
+
+.col-8 {
+   width: 66.66%;
+}
+
+.col-9 {
+   width: 75%;
+}
+
+.col-10 {
+   width: 83.33%;
+}
+
+.col-11 {
+   width: 91.66%;
+}
+
+.col-12 {
+   width: 100%;
+}
+
+/* =================commoponents======================== */
+
+.container .heading span {
+   font-size: 15px;
+   text-transform: uppercase;
+   color: var(--h-color);
+   letter-spacing: 1px;
+   line-height: 28px;
+}
+
+.container .heading h2 {
+   font-family: var(--headfont);
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 38px;
+   margin: 20px 0;
+}
+
+.container .heading p {
+   line-height: 32px;
+   margin-top: 20px;
+   max-width: 600px;
+   color: var(--p-color);
+   margin-bottom: 30px;
+}
+
+.btn {
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 12px;
+   background-color: var(--primary);
+   border: 1px solid var(--black);
+   font-weight: 500;
+   color: var(--white);
+   letter-spacing: 1px;
+   padding: 13px 18px;
+}
+
+.btn:last-child {
+   background-color: var(--white);
+   color: var(--black);
+}
+
+.btn:hover {
+   background-color: var(--black);
+   color: var(--white);
+}
+
+.row .com-btn {
+   text-align: right;
+   padding-bottom: 20px;
+}
+
+.row .com-btn .ser-btn {
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 32px;
+   color: var(--p-color);
+}
+
+.row .com-btn .ser-btn i {
+   color: var(--p-color);
+   line-height: 32px;
+   padding-left: 40px;
+}
+
+.row .com-btn .ser-btn span:hover {
+   letter-spacing: 5px;
+   transition: all 0.5s;
+}
+
+
+/* ==========================header========================================== */
+
+header {
+   border-top: 15px solid var(--primary);
+   border-bottom: 1px solid var(--black);
+   padding: 20px 0px 35px;
+}
+
+header .row {
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo img {
+   width: 80px;
+}
+
+header .row .col-3:last-child {
+   display: flex;
+   justify-content: end;
+}
+
+header .navbar {
+   display: flex;
+   list-style: none;
+   padding: 0;
+}
+
+header .navbar li {
+   padding: 0 20px;
+}
+
+header .navbar li a,
+header .col-3 .nav-contact {
+   color: var(--h-color);
+   text-transform: uppercase;
+   font-weight: 500;
+   line-height: 15px;
+   font-size: 14px;
+}
+
+/* ================banner================== */
+
+.banner {
+   padding: 70px 0 140px;
+}
+
+.banner .col-6 img {
+   height: 420px;
+   object-fit: cover;
+}
+
+.banner .banner-data h1 {
+   font-size: 55px;
+   line-height: 65px;
+   font-weight: 700;
+   font-family: var(--headfont);
+   margin-bottom: 20px;
+   letter-spacing: -1px;
+   color: var(--h-color);
+}
+
+.banner .banner-data p {
+   font-size: 15px;
+   color: var(--p-color);
+   line-height: 32px;
+   margin-bottom: 25px;
+}
+
+.banner .row .col-6:last-child img {
+   padding-left: 70px;
+
+}
+
+.banner .info {
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   text-transform: uppercase;
+}
+
+.info .data h2 {
+   font-size: 35px;
+   font-weight: 700;
+   line-height: 52px;
+   color: var(--h-color);
+   margin-bottom: 10px;
+}
+
+.info .data p {
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 24px;
+}
+
+.banner-btn a:first-child {
+   margin-right: 30px;
+}
+
+.banner-btn .btn {
+   margin-top: 50px;
+}
+
+.welcome .col-6:first-child {
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--h-color);
+   line-height: 28px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.welcome .col-6:last-child {
+   font-size: 19px;
+   color: var(--p-color);
+   font-weight: 500;
+   line-height: 40px;
+   padding-left: 50px;
+   justify-content: end;
+}
+
+.welcome {
+   margin-bottom: 144px;
+}
+
+/* ===============================property===================================== */
+.property {
+   padding-bottom: 100px;
+}
+
+.property .prop-card .prop-img {
+   position: relative;
+   height: 280px;
+   cursor: pointer;
+}
+
+.property .prop-card .prop-img img {
+   height: 100%;
+   object-fit: cover;
+}
+
+.property .prop-card .prop-img p {
+   position: absolute;
+   font-size: 14px;
+   color: var(--white);
+   top: 0;
+   right: 0;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   padding: 10px 30px;
+   background-color: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur;
+   font-weight: 500;
+   line-height: 20px;
+   cursor: pointer;
+}
+
+.property .row {
+   margin: 0 -30px;
+}
+
+.property .col-4 {
+   padding: 0 30px;
+}
+
+.property .prop-card {
+   margin-bottom: 80px;
+}
+
+.property .prop-data h2 {
+   color: var(--h-color);
+   font-family: var(--headfont);
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 34px;
+   margin: 15px 0;
+}
+
+.property .prop-data p {
+   color: var(--p-color);
+   font-size: 13px;
+   line-height: 24px;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+}
+
+.property .price {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.property .price>span {
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 35px;
+}
+
+.property .price>span i {
+   color: var(--primary);
+}
+
+.facility span:first-child {
+   margin-right: 20px;
+}
+
+.facility span {
+   font-size: 20px;
+   color: var(--p-color);
+   font-weight: 600;
+   line-height: 32px;
+}
+
+.facility span i {
+   color: var(--black);
+   letter-spacing: 10px;
+}
+
+.property .col-12 {
+   padding-right: 30px;
+}
+
+.property .prop-btn {
+   text-align: right;
+}
+
+.property a span {
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 32px;
+   color: var(--p-color);
+   transition: all 0.5s;
+}
+
+.property a span:hover {
+   letter-spacing: 2px;
+}
+
+.property .prop-btn i {
+   color: var(--black);
+   padding-left: 25px;
+}
+
+/* ==================success=============== */
+
+.success {
+   padding-bottom: 100px;
+}
+
+
+
+.success .row .s-card {
+   border-left: 10px solid var(--primary);
+   padding: 20px;
+   outline: 1px solid var(--black);
+}
+
+.success .s-card h1 {
+   line-height: 32px;
+   color: var(--h-color);
+   font-family: var(--headfont);
+   margin-bottom: 20px;
+}
+
+.success .s-card p {
+   line-height: 32px;
+   color: var(--p-color);
+   margin-bottom: 20px;
+}
+
+.success .row {
+   margin: 0 -20px;
+}
+
+.success .row .col-3 {
+   padding: 0 20px;
+}
+
+/* ===================service================= */
+
+.service {
+   padding: 60px 0;
+}
+
+.service .col-12 img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.service .col-12 {
+   height: 550px;
+   padding-top: 20px;
+}
+
+.col-4 .com-btn i {
+   padding-right: 20px;
+}
+
+/* ======================service-card=========================== */
+.ser-card {
+   padding-bottom: 50px;
+}
+
+.ser-card .container h2 {
+   line-height: 30px;
+   text-align: center;
+   font-family: var(--headfont);
+   font-size: 26px;
+   color: var(--h-color);
+   font-weight: 700;
+   border-bottom: 1px solid var(--black);
+   padding: 25px 0;
+}
+
+
+.ser-card .pro-l {
+   border: 1px solid var(--black);
+   border-bottom: 10px solid var(--primary);
+}
+
+.col-4 .dot i {
+   color: var(--primary);
+   border: 1px solid var(--black);
+   border-radius: 50%;
+   font-size: 12px;
+   margin-right: 10px;
+
+}
+
+.ser-card .dot {
+   padding: 20px;
+}
+
+.ser-card .col-4 a h3 {
+   color: var(--h-color);
+   font-size: 23px;
+   line-height: 28px;
+   padding: 0 20px;
+   font-family: var(--headfont);
+   padding-bottom: 25px;
+}
+
+.ser-card .col-4 p {
+   line-height: 32px;
+   padding: 0 20px;
+   padding-bottom: 25px;
+   color: var(--p-color);
+   font-size: 16px;
+}
+
+.ser-card .row .col-4 {
+   margin-bottom: 50px;
+}
+
+
+.ser-card .row {
+   margin-left: -40px;
+}
+
+.ser-card .col-4 {
+   padding-left: 40px;
+}
+
+/* ======================study==================== */
+.study {
+   padding-bottom: 140px;
+}
+
+.study .study-data .box {
+   height: 30px;
+   width: 10px;
+   border: 1px solid var(--black);
+   background-color: var(--primary);
+   left: 0;
+   top: 20px;
+   position: absolute;
+   border-left: transparent;
+
+}
+
+.study .container .heading p {
+   max-width: initial;
+   margin-right: 30px;
+}
+
+.study .study-card {
+   border: 1px solid var(--black);
+   padding-left: 20px;
+   padding-top: 20px;
+   position: relative;
+}
+
+.study-card .study-data p {
+   padding: 20px 0;
+   font-size: 17px;
+}
+
+.study-card .study-data h2 {
+   color: var(--h-color);
+}
+
+.study-card .com-btn span {
+   font-size: 14px;
+   color: var(--h-color);
+}
+
+/* ===========================logo================================ */
+
+.logo-slide {
+   background-color: var(--primary);
+   height: 100px;
+   padding: 30px;
+   margin-bottom: 100px;
+
+}
+
+.logo-slide .row {
+   justify-content: space-between;
+}
+
+.logo-slide img {
+   height: 40px;
+}
+
+/* ===================story==================================== */
+
+.story .heading {
+   margin-bottom: 50px;
+}
+
+.story .s-video video {
+   height: 418px;
+   width: 100%;
+   object-fit: cover;
+   padding: 5px 0;
+}
+
+.story .s-video .story-video {
+   height: 278px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.story .col-3 {
+   padding-left: 15px;
+   padding-bottom: 70px;
+}
+
+.story .row {
+   margin-left: -15px;
+}
+
+/* ===========================review====================================== */
+
+.review {
+   padding: 80px 0;
+}
+
+.review .container .col-6 {
+   padding-left: 100px;
+   margin-bottom: 50px;
+}
+
+.review .row {
+   margin-left: -100px;
+}
+
+.row .r-data {
+   display: flex;
+   justify-content: space-between;
+}
+
+.review .review-data .r-data span {
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   line-height: 28px;
+   margin-bottom: 10px;
+   color: var(--h-color);
+}
+
+.review .review-data .r-data i {
+   font-size: 20px;
+   padding-left: 5px;
+}
+
+.review .review-info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.review .review-data p {
+   line-height: 32px;
+   color: var(--p-color);
+   font-size: 16px;
+   padding-bottom: 20px;
+}
+
+.review .review-data .review-info h3 {
+   font-size: 24px;
+   line-height: 32px;
+   font-family: var(--headfont);
+   font-weight: 700;
+   padding: 15px 0;
+}
+
+.review .review-data .review-info .review-img img {
+   height: 75px;
+   background-color: var(--primary);
+   border-radius: 50%;
+   border: 1px solid var(--black);
+}
+
+/* =====================================journey====================================== */
+.journey {
+   padding-bottom: 100px;
+}
+
+.journey .container .heading p {
+   max-width: initial;
+}
+
+.journey .container .heading h2 {
+   font-size: 32px;
+   line-height: 38px;
+   position: relative;
+   margin-left: 30px;
+}
+
+.journey .box-2 {
+   height: 40px;
+   width: 10px;
+   border: 1px solid var(--black);
+   background-color: var(--primary);
+   position: absolute;
+}
+
+.journey .journey-data {
+   display: flex;
+   align-items: flex-start;
+}
+
+.journey .con-btn a {
+   border: 1px solid var(--black);
+   padding: 10px 10px;
+   background-color: var(--primary);
+   color: var(--white);
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 32px;
+   letter-spacing: 1px;
+}
+
+.journey .con-btn a:hover {
+   background-color: var(--black);
+}
+
+.journey .con-btn {
+   padding-left: 220px;
+   padding-top: 100px;
+}
+
+/* ========================article=========================== */
+
+.article {
+   padding-bottom: 100px;
+}
+
+.article .article-img {
+   cursor: pointer;
+   margin-top: 30px;
+}
+
+.article .article-card .article-img {
+   position: relative;
+   margin-right: 0;
+   height: 274px;
+}
+
+.article .article-card .article-img img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.article .article-card .article-img p {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.3);
+   color: var(--white);
+   padding: 3px 10px;
+   line-height: 32px;
+
+
+}
+
+.article .article-card .article-data h2 {
+   font-size: 24px;
+   color: var(--h-color);
+   font-weight: 700;
+   line-height: 32px;
+   font-family: var(--headfont);
+   padding: 20px 0;
+}
+
+.article .article-card .article-data p {
+   color: var(--p-color);
+   line-height: 32px;
+}
+
+.article .row .col-4 {
+   padding-left: 50px;
+   padding-bottom: 20px;
+}
+
+.article .row {
+   margin-left: -50px;
+}
+
+/* ==================================real-logo=========================== */
+
+.real-logo {
+   padding-bottom: 50px;
+}
+
+.real-logo .container {
+   border-bottom: 1px solid var(--black);
+}
+
+.real-logo .row {
+   padding-bottom: 40px;
+}
+
+.real-logo .real-l .real-img {
+   width: 80px;
+   padding-bottom: 20px;
+}
+
+.real-logo .real-data p {
+   line-height: 32px;
+   color: var(--p-color);
+   max-width: 600px;
+   padding-bottom: 130px;
+}
+
+.real-logo .container .heading span {
+   font-size: 12px;
+   line-height: 28px;
+   padding-right: 20px;
+}
+
+.real-logo .menu-bar li {
+   list-style: none;
+   line-height: 32px;
+   color: var(--p-color);
+   text-transform: capitalize;
+   padding-top: 15px;
+}
+
+.real-logo .menu-bar span {
+   color: var(--h-color);
+   font-weight: 700;
+   line-height: 32px;
+}
+
+.real-logo .container .heading span {
+   font-size: 12px;
+   line-height: 28px;
+   padding-right: 20px;
+}
+
+.real-logo .uti-pages li {
+   list-style: none;
+   line-height: 32px;
+   color: var(--p-color);
+   text-transform: capitalize;
+   padding-top: 15px;
+   border-bottom: 1px solid var(--white);
+}
+
+.real-logo .uti-pages span {
+   color: var(--h-color);
+   font-weight: 700;
+   line-height: 32px;
+}
+
+/* ======================================footer====================================== */
+
+.webflow {
+   padding-bottom: 40px;
+}
+
+.webflow .web-logo {
+   width: 20px;
+   line-height: 32px;
+   margin-right: 10px;
+}
+
+.w-logo {
+   display: flex;
+}
+
+.webflow .col-6 p {
+   line-height: 32px;
+}
+
+.webflow .col-6 span {
+   font-weight: 700;
+   line-height: 32px;
+   color: var(--h-color);
+}
+
+.webflow .col-6 .web-info {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.line {
+   background-color: var(--primary);
+   height: 15px;
+}
